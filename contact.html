@@ -1,0 +1,119 @@
+<html>
+     <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script>
+               function fun(){
+                    var v=document.f1.t1.value;
+                    var v1=/^[A-z_]+$/;
+                    if(v1.test(v) )
+                    {
+                         alert('Enter Name is valid');
+                    }
+                    else{
+                         alert('Enter Name is  Not valid');
+                    }
+                    var v6=document.f1.t4.value;
+                    if(v6.length >=10 )
+                    {
+                         alert('Enter Members Is Valid');
+                    }
+                    else{
+                         alert('Enter Members Is  Not Valid');
+
+                    }
+                    
+                    var v4=/^\d{10}$/;
+                    var v5=document.f1.t3.value;
+                    if(v4.test(v5) )
+                    {
+                         alert('Enter Mobile Number Is Valid');
+                    }
+                    else{
+                         alert('Enter Mobile Number Is Not Valid');
+                    }
+                    
+                    var v2=document.f1.t2.value;
+                    var v3=/^\w+([\.-]?\w)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                    if(v3.test(v2) )
+                    {
+                         alert('Enter Email Is Valid');
+
+                    }
+                    else{
+                         alert('Enter Email Is Not  Valid');
+                    }
+                    
+               }
+          </script>
+          <style>
+               .a{
+                    background-color:cornsilk;
+                    font-size: x-large;
+                    font-family: serif;
+                    padding: 20px;
+               }
+               .a:hover{
+                    font-size: xx-large;
+                    font-family: cursive;
+               }
+               .b{
+                    margin-top: 20px;
+                    margin-left: 5px;
+                    border: 2px solid black;
+               }
+               .b:hover{
+                    opacity: 0.5;
+               }
+               .c{
+                    margin-top: 20px;
+                    background-color: grey;
+               }
+                .d{
+                    color: white;
+                    text-align: center;
+                    font-size: x-large;
+                    font-family: cursive;
+               } 
+          </style>
+          
+     </head>
+     <body>
+          <div class="a">
+                    Add Contact
+          </div>
+          <div class="b">
+               <img src="s.png"/>
+          </div>
+          <div class="c">
+               <center><p style="font-family: cursive;color: white;font-size: xx-large;padding-top: 50px;">CONTACT</p></center>
+               <p style="color:white;padding: 10px;font-size: x-large;font-family: monospace;">Find us at some [address] or call us at 05050515-122330</p>
+               <p style="color:white;padding: 10px;font-size: x-large;font-family: monospace;">We offer full-service catering for any event, large or small. 
+                    We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, 
+                    both look and taste.</p>
+               <p style="color:white;padding: 10px;font-size: x-large;font-family: monospace;"><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+
+               <form name="f1"  onsubmit="fun()" class="d">
+                    <fieldset>
+                         <legend >
+                              contact form
+                         </legend>
+                         <label>NAME :</label>
+                         <input type="text" id="t1" required/><br><br>
+                         <label>HOW MANY MEMBERS ?</label>
+                         <input type="text" id="t4" required/><br><br>
+                         <label>MOBILE NO :</label>
+                         <input type="text" id="t3" required/><br><br>
+                         <label>ADDRESS :</label>
+                         <textarea cols="20" rows="4"></textarea><br><br>
+                         <labl>DATE : </labl>
+                         <input type="date"/><br><br>
+                         <label>EMAIL ID : </label>
+                         <input type="text" id="t2" required/><br><br>
+                         <input type="submit" value="submit"/>
+                    </fieldset>
+               </form>
+               <a  style="color: black;font-size: x-large;" href="restaurant.html">BACK TO HOME PAGE</a>
+          </div>
+          
+     </body>
+</html>
